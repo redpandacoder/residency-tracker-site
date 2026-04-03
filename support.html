@@ -64,13 +64,35 @@
 
     footer {
       text-align: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-      padding: 8px 0 24px;
+      padding: 16px 0 28px;
     }
 
-    footer strong {
-      color: var(--text);
+    .studio-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .studio-brand img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .studio-brand .studio-name {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    footer .footer-link {
+      margin: 0;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -78,7 +100,6 @@
   <div class="wrap">
     <section class="card">
       <h1>Canada Residency Tracker Support</h1>
-      <p>Canada Residency Tracker is published by <strong>Red Panda Studio</strong>.</p>
       <p>If you need help, want to report a bug, or have product feedback, contact:</p>
       <p><a href="mailto:redpandacorp@yahoo.com">redpandacorp@yahoo.com</a></p>
       <p class="muted">We aim to respond as soon as possible.</p>
@@ -101,8 +122,11 @@
     </section>
 
     <footer>
-      <p><strong>Red Panda Studio</strong></p>
-      <p><a href="index.html">Product overview</a></p>
+      <div class="studio-brand">
+        <img src="assets/red-panda-studio-avatar.png" width="72" height="72" alt="" aria-hidden="true">
+        <p class="studio-name">Red Panda Studio</p>
+      </div>
+      <p class="footer-link"><a href="index.html">Product overview</a></p>
     </footer>
   </div>
 </body>

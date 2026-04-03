@@ -67,12 +67,6 @@
       color: var(--muted);
     }
 
-    .publisher {
-      margin: 0 0 16px;
-      font-size: 1.05rem;
-      color: var(--text);
-    }
-
     .cta {
       display: inline-block;
       margin-right: 12px;
@@ -96,9 +90,29 @@
 
     footer {
       text-align: center;
-      color: var(--muted);
+      padding: 16px 0 28px;
+    }
+
+    .studio-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .studio-brand img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .studio-brand .studio-name {
+      margin: 0;
       font-size: 0.95rem;
-      padding: 8px 0 24px;
+      color: var(--muted);
+      font-weight: 400;
     }
   </style>
 </head>
@@ -106,7 +120,6 @@
   <div class="wrap">
     <section class="hero">
       <h1>Canada Residency Tracker</h1>
-      <p class="publisher">Published by <strong>Red Panda Studio</strong>.</p>
       <p>Track your days in Canada, monitor PR obligations, and check border wait times in one app.</p>
       <p class="subtle">Built for permanent residents, non-residents, and anyone who needs a clear record of physical presence in Canada.</p>
       <a class="cta primary" href="support.html">Support</a>
@@ -131,8 +144,10 @@
     </section>
 
     <footer>
-      <p>Canada Residency Tracker</p>
-      <p class="subtle"><strong>Red Panda Studio</strong></p>
+      <div class="studio-brand">
+        <img src="assets/red-panda-studio-avatar.png" width="72" height="72" alt="" aria-hidden="true">
+        <p class="studio-name">Red Panda Studio</p>
+      </div>
     </footer>
   </div>
 </body>
