@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Canada Residency Tracker</title>
-  <meta name="description" content="Track your days in Canada, PR obligations, and border wait times with Canada Residency Tracker.">
+  <meta id="meta-desc" name="description" content="Track your days in Canada, PR obligations, and border wait times with Canada Residency Tracker.">
   <style>
     :root {
       color-scheme: light;
@@ -20,7 +20,7 @@
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -30,6 +30,46 @@
       max-width: 860px;
       margin: 0 auto;
       padding: 24px;
+    }
+
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      background: var(--card);
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 8px 18px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .lang-btn.is-active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .lang-btn:not(.is-active):hover {
+      color: var(--text);
+      background: rgba(37, 99, 235, 0.08);
+    }
+
+    .lang-btn:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
     }
 
     .hero, .section {
@@ -114,41 +154,107 @@
       color: var(--muted);
       font-weight: 400;
     }
+
+    .studio-brand .studio-tagline {
+      margin: 8px 0 0;
+      max-width: 34em;
+      width: 100%;
+      font-size: 0.875rem;
+      line-height: 1.55;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .studio-brand .studio-tagline-zh {
+      margin-top: 14px;
+      line-height: 1.7;
+    }
   </style>
 </head>
-<body>
+<body
+  data-title-en="Canada Residency Tracker"
+  data-title-zh="加拿大居留追踪"
+  data-desc-en="Track your days in Canada, PR obligations, and border wait times with Canada Residency Tracker."
+  data-desc-zh="用 Canada Residency Tracker 记录你在加拿大的停留天数、PR 居住义务与加美陆路边境等待时间。"
+>
   <div class="wrap">
-    <section class="hero">
-      <h1>Canada Residency Tracker</h1>
-      <p>Track your days in Canada, monitor PR obligations, and check border wait times in one app.</p>
-      <p class="subtle">Built for permanent residents, non-residents, and anyone who needs a clear record of physical presence in Canada.</p>
-      <a class="cta primary" href="support.html">Support</a>
-      <a class="cta secondary" href="privacy.html">Privacy Policy</a>
-    </section>
-
-    <section class="section">
-      <h2>What the app helps you do</h2>
-      <ul>
-        <li>Track PR residency obligations over the last 5 years.</li>
-        <li>Monitor the non-resident 183-day rule within the calendar year.</li>
-        <li>Log departures and returns with a simple stay history.</li>
-        <li>Check live Canada-US land border wait times.</li>
-        <li>Back up and sync your data with iCloud on Premium.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Availability</h2>
-      <p>Canada Residency Tracker is available for iPhone and supports English and Simplified Chinese.</p>
-      <p class="subtle">For product questions, purchase help, or bug reports, use the support page linked above.</p>
-    </section>
-
-    <footer>
-      <div class="studio-brand">
-        <img src="assets/red-panda-studio-avatar.png" width="72" height="72" alt="" aria-hidden="true">
-        <p class="studio-name">Red Panda Studio</p>
+    <div class="lang-bar">
+      <div class="lang-toggle" role="group" aria-label="Language / 语言">
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
       </div>
-    </footer>
+    </div>
+
+    <div class="lang-panel" data-lang="en" lang="en">
+      <section class="hero">
+        <h1>Canada Residency Tracker</h1>
+        <p>Track your days in Canada, monitor PR obligations, and check border wait times in one app.</p>
+        <p class="subtle">Built for permanent residents, non-residents, and anyone who needs a clear record of physical presence in Canada.</p>
+        <a class="cta primary" href="support.html">Support</a>
+        <a class="cta secondary" href="privacy.html">Privacy Policy</a>
+      </section>
+
+      <section class="section">
+        <h2>What the app helps you do</h2>
+        <ul>
+          <li>Track PR residency obligations over the last 5 years.</li>
+          <li>Monitor the non-resident 183-day rule within the calendar year.</li>
+          <li>Log departures and returns with a simple stay history.</li>
+          <li>Check live Canada-US land border wait times.</li>
+          <li>Back up and sync your data with iCloud on Premium.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Availability</h2>
+        <p>Canada Residency Tracker is available for iPhone and supports English and Simplified Chinese.</p>
+        <p class="subtle">For product questions, purchase help, or bug reports, use the support page linked above.</p>
+      </section>
+
+      <footer>
+        <div class="studio-brand">
+          <img src="assets/red-panda-studio-avatar.png" width="72" height="72" alt="" aria-hidden="true">
+          <p class="studio-name">Red Panda Studio</p>
+          <p class="studio-tagline">Red Panda Studio creates smart, reliable tools designed to simplify everyday life. Inspired by the curiosity and agility of red pandas, we build with care and warmth.</p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="lang-panel" data-lang="zh" lang="zh-Hans" hidden>
+      <section class="hero">
+        <h1>加拿大居留追踪</h1>
+        <p>用一款应用记录你在加拿大的停留天数、关注永久居民（PR）居住义务，并查看加美陆路边境等待时间。</p>
+        <p class="subtle">面向永久居民、非税务居民，以及需要清晰掌握加拿大实际在境记录的用户。</p>
+        <a class="cta primary" href="support.html">支持与帮助</a>
+        <a class="cta secondary" href="privacy.html">隐私政策</a>
+      </section>
+
+      <section class="section">
+        <h2>应用能帮你做什么</h2>
+        <ul>
+          <li>追踪过去 5 年内的 PR 居住义务。</li>
+          <li>在公历年内关注非税务居民的 183 天规则。</li>
+          <li>用简洁的停留记录登记出境与入境。</li>
+          <li>查看加拿大与美国陆路边境的实时等待时间。</li>
+          <li>Premium 可启用 iCloud 备份与同步。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>获取方式</h2>
+        <p>适用于 iPhone，界面支持英语与简体中文。</p>
+        <p class="subtle">产品咨询、购买问题或缺陷反馈，请通过上方链接前往支持页面。</p>
+      </section>
+
+      <footer>
+        <div class="studio-brand">
+          <img src="assets/red-panda-studio-avatar.png" width="72" height="72" alt="" aria-hidden="true">
+          <p class="studio-name">Red Panda Studio</p>
+          <p class="studio-tagline studio-tagline-zh">Red Panda Studio 专注于打造智能、可靠的工具，帮助你更高效地应对日常生活。我们从小熊猫的好奇与灵动中汲取灵感，用心打磨每一款产品。</p>
+        </div>
+      </footer>
+    </div>
   </div>
+  <script src="assets/site.js" defer></script>
 </body>
 </html>

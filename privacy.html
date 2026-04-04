@@ -4,16 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - Canada Residency Tracker</title>
-  <meta name="description" content="Privacy Policy for Canada Residency Tracker.">
+  <meta id="meta-desc" name="description" content="Privacy Policy for Canada Residency Tracker.">
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f7f8fb;
+    }
+
+    .wrap {
       max-width: 760px;
       margin: 0 auto;
       padding: 24px;
-      line-height: 1.6;
-      color: #1f2937;
+    }
+
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
       background: #ffffff;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 8px 18px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #6b7280;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .lang-btn.is-active {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .lang-btn:not(.is-active):hover {
+      color: #1f2937;
+      background: rgba(37, 99, 235, 0.08);
+    }
+
+    .lang-btn:focus-visible {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+    }
+
+    .policy-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 28px;
     }
 
     h1 { font-size: 1.8rem; margin-top: 0; }
@@ -50,34 +101,101 @@
       color: #6b7280;
       font-weight: 400;
     }
+
+    .studio-brand .studio-tagline {
+      margin: 8px 0 0;
+      max-width: 34em;
+      width: 100%;
+      font-size: 0.875rem;
+      line-height: 1.55;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    .studio-brand .studio-tagline-zh {
+      margin-top: 14px;
+      line-height: 1.7;
+    }
   </style>
 </head>
-<body>
-  <h1>Privacy Policy - Canada Residency Tracker</h1>
-  <p class="updated">Last updated: April 2026</p>
-
-  <p>This privacy policy applies to the app <strong>Canada Residency Tracker</strong> ("the App") published by <strong>Red Panda Studio</strong> ("we", "us").</p>
-
-  <h2>Data We Do Not Collect</h2>
-  <p>We do not collect, store, or transmit personal data to our own servers. The App does not require an account, and we do not use third-party advertising or analytics to track you.</p>
-
-  <h2>Data Stored on Your Device and in iCloud</h2>
-  <p>Information you enter in the App, such as stay dates, PR card expiry details, and preferences, is stored on your device and, if you enable iCloud sync, in your personal iCloud account. We do not have access to this data.</p>
-
-  <h2>Border Wait Times</h2>
-  <p>When you view border wait times, the App may request publicly available data from third-party or government sources. These requests do not include personally identifiable information.</p>
-
-  <h2>In-App Purchases</h2>
-  <p>Subscriptions and in-app purchases are processed by Apple. We do not receive or store your payment information. Apple handles billing and transaction data under its own privacy policy.</p>
-
-  <h2>Contact</h2>
-  <p>If you have questions about this privacy policy or the App, contact Red Panda Studio at <a href="mailto:redpandacorp@yahoo.com">redpandacorp@yahoo.com</a>.</p>
-
-  <footer>
-    <div class="studio-brand">
-      <img src="assets/red-panda-studio-avatar.png" width="72" height="72" alt="" aria-hidden="true">
-      <p class="studio-name">Red Panda Studio</p>
+<body
+  data-title-en="Privacy Policy - Canada Residency Tracker"
+  data-title-zh="隐私政策 - 加拿大居留追踪"
+  data-desc-en="Privacy Policy for Canada Residency Tracker."
+  data-desc-zh="加拿大居留追踪应用的隐私政策。"
+>
+  <div class="wrap">
+    <div class="lang-bar">
+      <div class="lang-toggle" role="group" aria-label="Language / 语言">
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+      </div>
     </div>
-  </footer>
+
+    <div class="lang-panel" data-lang="en" lang="en">
+      <div class="policy-card">
+        <h1>Privacy Policy - Canada Residency Tracker</h1>
+        <p class="updated">Last updated: April 2026</p>
+
+        <p>This privacy policy applies to the app <strong>Canada Residency Tracker</strong> ("the App") published by <strong>Red Panda Studio</strong> ("we", "us").</p>
+
+        <h2>Data We Do Not Collect</h2>
+        <p>We do not collect, store, or transmit personal data to our own servers. The App does not require an account, and we do not use third-party advertising or analytics to track you.</p>
+
+        <h2>Data Stored on Your Device and in iCloud</h2>
+        <p>Information you enter in the App, such as stay dates, PR card expiry details, and preferences, is stored on your device and, if you enable iCloud sync, in your personal iCloud account. We do not have access to this data.</p>
+
+        <h2>Border Wait Times</h2>
+        <p>When you view border wait times, the App may request publicly available data from third-party or government sources. These requests do not include personally identifiable information.</p>
+
+        <h2>In-App Purchases</h2>
+        <p>Subscriptions and in-app purchases are processed by Apple. We do not receive or store your payment information. Apple handles billing and transaction data under its own privacy policy.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this privacy policy or the App, contact Red Panda Studio at <a href="mailto:redpandacorp@yahoo.com">redpandacorp@yahoo.com</a>.</p>
+      </div>
+
+      <footer>
+        <div class="studio-brand">
+          <img src="assets/red-panda-studio-avatar.png" width="72" height="72" alt="" aria-hidden="true">
+          <p class="studio-name">Red Panda Studio</p>
+          <p class="studio-tagline">Red Panda Studio creates smart, reliable tools designed to simplify everyday life. Inspired by the curiosity and agility of red pandas, we build with care and warmth.</p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="lang-panel" data-lang="zh" lang="zh-Hans" hidden>
+      <div class="policy-card">
+        <h1>隐私政策 · 加拿大居留追踪</h1>
+        <p class="updated">更新日期：2026 年 4 月</p>
+
+        <p>本隐私政策适用于由 <strong>Red Panda Studio</strong>（「我们」）发布的应用程序 <strong>Canada Residency Tracker</strong>（「本应用」）。</p>
+
+        <h2>我们不收集的数据</h2>
+        <p>我们不会向自有服务器收集、存储或传输个人数据。本应用不要求注册账户，亦不使用第三方广告或分析服务对你进行追踪。</p>
+
+        <h2>设备端与 iCloud 中的数据</h2>
+        <p>你在本应用中录入的信息（例如停留日期、枫叶卡到期信息与偏好设置）保存在你的设备上；若你开启 iCloud 同步，则还会保存在你的个人 iCloud 账户中。我们无法访问这些数据。</p>
+
+        <h2>边境等待时间</h2>
+        <p>当你查看边境等待时间时，本应用可能会向第三方或政府机构请求公开数据。这些请求不包含可识别个人身份的信息。</p>
+
+        <h2>应用内购买</h2>
+        <p>订阅与应用内购买由 Apple 处理。我们不会接收或存储你的付款信息。账单与交易数据由 Apple 依据其隐私政策处理。</p>
+
+        <h2>联系方式</h2>
+        <p>如对本隐私政策或本应用有疑问，请通过 <a href="mailto:redpandacorp@yahoo.com">redpandacorp@yahoo.com</a> 联系 Red Panda Studio。</p>
+      </div>
+
+      <footer>
+        <div class="studio-brand">
+          <img src="assets/red-panda-studio-avatar.png" width="72" height="72" alt="" aria-hidden="true">
+          <p class="studio-name">Red Panda Studio</p>
+          <p class="studio-tagline studio-tagline-zh">Red Panda Studio 专注于打造智能、可靠的工具，帮助你更高效地应对日常生活。我们从小熊猫的好奇与灵动中汲取灵感，用心打磨每一款产品。</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
